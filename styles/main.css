@@ -4,3 +4,18 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+header img {
+    margin: 25px;
+}
+
+header h1 {
+    color: aliceblue;
+}
+
+header nav {
+    position: absolute;
+    justify-content: space-between;
+    display: inline-block;
+    align-items: center;
+}
