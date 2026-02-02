@@ -22,7 +22,8 @@ header {
 }
 
 .title {
-    color: aliceblue;
+    color: linear-gradient(to right, #bdac14 0%, #a80606 100%);
+    --webkit-background-clip: text;
 }
 
 .navbar ul {
@@ -35,6 +36,11 @@ header {
 
 }
 
-header nav ul a {
+.navbar ul a {
     text-decoration: none;
+}
+
+.navbar ul li {
+    padding: 20px;
+    color: red;
 }
