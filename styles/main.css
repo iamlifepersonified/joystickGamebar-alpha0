@@ -45,6 +45,7 @@ header {
     padding: 20px;
     display: block;
     color: rgb(199, 152, 0);
+    background-color: blue;
     text-transform: uppercase;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
