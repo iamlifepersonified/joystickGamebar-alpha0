@@ -45,17 +45,49 @@ header {
     padding: 20px;
     display: block;
     color: rgb(199, 152, 0);
-    background-color: blue;
     text-transform: uppercase;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
 }
+
+.link-anchor:visited {
+    color: rgb(199, 152, 0);
+}
+
+.link-anchor:active {
+    color: #ffcc00;
+}
+
 .nav-item {
     margin: 0;
     font-size: 18px;
 }
 
+.nav-item::after,
+.nav-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff0000, #00ffff);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+.nav-item::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.nav-item:hover::after,
+.nav-item:hover::before {
+    transform: scaleX(1);
+}
+
+
+
 .link-anchor:hover {
-    background-color: #444;
     color: #ffcc00;
 }
