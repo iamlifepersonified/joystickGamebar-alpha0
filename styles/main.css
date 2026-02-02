@@ -26,23 +26,26 @@ header {
     color: linear-gradient(to right, #bdac14 0%, #a80606 100%);
     --webkit-background-clip: text;
     --webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 .nav-links {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0;
-    list-style-type: none;
     overflow: hidden;
-
 }
 
 .link-anchor {
     text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: white;
 }
 .nav-item {
-    margin: 0 15px;
+    margin: 0;
     font-size: 18px;
-    color: white;
 }
