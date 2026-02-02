@@ -23,7 +23,7 @@ header {
 
 .title {
     font-size: 24px;
-    color: linear-gradient(to right, #bdac14 0%, #a80606 100%);
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
     --webkit-background-clip: text;
     --webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -43,7 +43,7 @@ header {
     text-decoration: none;
     padding: 20px;
     display: block;
-    color: white;
+    color: rgb(199, 152, 0);
     text-transform: uppercase;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
@@ -51,4 +51,9 @@ header {
 .nav-item {
     margin: 0;
     font-size: 18px;
+}
+
+.link-anchor:hover {
+    background-color: #444;
+    color: #ffcc00;
 }
